@@ -13,6 +13,5 @@ RUN git clone https://github.com/ocminer/cpuminer-xzc
 
 RUN cd /cpuminer-xzc && ./build.sh
 RUN cd /cpuminer-xzc && make
-COPY run_miner.sh /cpuminer-xzc/run_miner.sh
-RUN chmod +x /cpuminer-xzc/run_miner.sh
+
 
