@@ -16,17 +16,3 @@ RUN cd /cpuminer-xzc && make
 COPY run_miner.sh /cpuminer-xzc/run_miner.sh
 RUN chmod +x /cpuminer-xzc/run_miner.sh
 
-EXPOSE 5595
-
-COPY wallet.dat /root/.zcoin/wallet.dat
-#ADD start_miner.sh /z/src
-#RUN chmod 755 /zcoin/src/start_miner.sh
-
-WORKDIR /cpuminer-xzc
-#RUN /cpuminer-multi/cpuminer --help
-
-#RUN /zcoin/src/zcoind --daemon
-#RUN /zcoin/src/zcoind setgenerate true 30
-#RUN tail -f /dev/null
-#ENTRYPOINT ["/zcoin/src/zcoind --daemon"]
-#CMD ["/zcoin/src/start_miner.sh"]
